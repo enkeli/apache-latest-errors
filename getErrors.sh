@@ -1,3 +1,9 @@
+#!/bin/bash
+
+# Apache latest errors log
+# 
+# @author Gabriel Vargas <angel.wrt@gmail.com>
+
 output="$HOME/Develop/logs";
 
 if [ ! -f $output ]
