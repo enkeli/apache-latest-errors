@@ -1,0 +1,18 @@
+output="$HOME/Develop/last_errors.txt";
+
+if [ $# -eq 0 ]
+  then
+    dir="log/apache2/error.log";
+  else
+    dir="www/$1/logs/error.log"
+fi
+
+echo "getting errors..." > $output;
+
+> $output;
+
+sleep 1;
+
+echo "====================================================================================================" > $output;
+tail -15 /var/$dir >> $output;
+echo "====================================================================================================" >> $output;
