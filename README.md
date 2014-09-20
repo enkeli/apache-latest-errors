@@ -7,15 +7,14 @@ Installation:
 
 Give the script execution perms:
 
-...
-!#BASH
+```bash
 chmod 775 getErrors
-...
+```
 
 and execute it
 
-...
+```bash
 ./getErrors
-...
+```
 
 If you execute it withour arguments, it looks for the default location of apache error logs
