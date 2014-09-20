@@ -5,7 +5,7 @@ if [ ! -f $output ]
     mkdir -p $output;
 fi
 
-output="$output/latest_errors.txt"
+output="$output/latest_errors.log"
 
 if [ $# -eq 0 ]
   then
