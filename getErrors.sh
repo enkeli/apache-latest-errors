@@ -1,4 +1,11 @@
-output="$HOME/Develop/last_errors.txt";
+output="$HOME/Develop/logs";
+
+if [ ! -f $output ]
+  then
+    mkdir -p $output;
+fi
+
+output="$output/latest_errors.txt"
 
 if [ $# -eq 0 ]
   then
@@ -9,6 +16,8 @@ fi
 
 echo "getting errors..." > $output;
 
+sleep 1;
+
 > $output;
 
 sleep 1;
@@ -16,3 +25,5 @@ sleep 1;
 echo "====================================================================================================" > $output;
 tail -15 /var/$dir >> $output;
 echo "====================================================================================================" >> $output;
+
+cat $output;
