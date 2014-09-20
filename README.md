@@ -37,7 +37,7 @@ wich is:
 /var/log/apache2/error.log
 ```
 
-But if you pass the first argument **_<dir>_**, it will look into _/var/www/**<dir>**/logs/error.log_  
+But if you pass the first argument **_dir_**, it will look into _/var/www/**dir**/logs/error.log_  
 Meaning that you have created a virtual host with that file structure. 
 
 ####Example:
@@ -49,7 +49,7 @@ getErrors example.com
 will look into:
 
 ```bash
-/var/www/**_example.com_**/logs/error.log
+/var/www/example.com/logs/error.log
 ```
 
 ####Output:
